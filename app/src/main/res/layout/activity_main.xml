@@ -4,179 +4,287 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2A06322E"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#971D554A"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tituloPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="serif-monospace"
+            android:padding="20dp"
+            android:text="@string/NombreTitulo"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_dialog_dialer"
+            app:tint="#8BCBDA36"
+            android:contentDescription="@string/despliegue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#971D554A"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Descripcion11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:freezesText="false"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/descrition"
+            android:textColor="#090909" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#971D554A"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/generalT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:padding="10dp"
+                android:text="@string/temperatura"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/DescripcionT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/Temp"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:padding="10dp"
+                android:text="@string/ubicacion"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/DescripcionU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/Ubicacion"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/tituloPrincipal"
+        android:id="@+id/sitios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif-monospace"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/sitios_recomendados"
+        android:textColor="#3A6010"
+        android:textSize="20sp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#8BCBDA36"
         android:gravity="center"
-        android:padding="20sp"
-        android:text="@string/NombreTitulo"
-        android:textSize="34sp" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="10sp">
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp">
+
 
         <ImageView
-            android:id="@+id/imagenPOI1"
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/casaannafrank"
+            android:contentDescription="@string/casa" />
+
+        <Button
+            android:id="@+id/btnTitulo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/imagen1" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnTitulo1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Titulo1"
-                tools:ignore="NestedWeights" />
-
-            <TextView
-                android:id="@+id/Descripcion1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:padding="20sp"
-                android:text="@string/descripcion1" />
-
-        </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Titulo1"
+            android:textColor="#000000"
+            app:backgroundTint="#8BC34A"
+            app:iconTint="#9A1818"
+            tools:ignore="NestedWeights" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/Descripcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp"
+        android:text="@string/descripcion1"
+        android:textColor="#090909" />
 
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+        android:background="#8BCBDA36"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:padding="10sp">
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp">
 
         <ImageView
-            android:id="@+id/imagenPOI2"
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/museo"
+            android:contentDescription="@string/museo" />
+
+        <Button
+            android:id="@+id/btnTitulo2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/imagen2" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnTitulo2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Titulo2" />
-
-            <TextView
-                android:id="@+id/Descripcion2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:padding="20sp"
-                android:text="@string/descripcion2" />
-
-        </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:fontFamily="serif-monospace"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="@string/Titulo2"
+            android:textColor="#000000"
+            android:textColorHighlight="#672020"
+            android:textColorLink="#A62F2F"
+            app:backgroundTint="#8BC34A"
+            app:iconTint="#9A1818" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/Descripcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp"
+        android:text="@string/descripcion2"
+        android:textColor="#090909" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+        android:background="#8BCDDC39"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:padding="10sp">
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp">
 
         <ImageView
-            android:id="@+id/imagenPOI3"
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/concertgebou"
+            android:contentDescription="@string/conciertos" />
+
+        <Button
+            android:id="@+id/btnTitulo3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/imagen3" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnTitulo3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/titulo3" />
-
-            <TextView
-                android:id="@+id/Descripcion3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:padding="20sp"
-                android:text="@string/descripcion3" />
-
-        </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:fontFamily="serif-monospace"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="@string/titulo3"
+            android:textColor="#000000"
+            android:textColorHighlight="#672020"
+            android:textColorLink="#A62F2F"
+            app:backgroundTint="#8BC34A"
+            app:iconTint="#9A1818" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/Descripcion3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10sp">
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp"
+        android:text="@string/descripcion3"
+        android:textColor="#090909" />
 
-        <ImageView
-            android:id="@+id/imagenPOI4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/imagen4" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/titulo4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/titulo4" />
-
-            <TextView
-                android:id="@+id/Descripcion4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:padding="20sp"
-                android:text="@string/descripcion4" />
-        </LinearLayout>
-
-    </LinearLayout>
 
 </LinearLayout>
