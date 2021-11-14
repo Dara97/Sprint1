@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Sprint_1</string>
+    <string name="NombreTitulo">Ámsterdam</string>
+    <string name="Titulo1">La casa de Ana Frank</string>
+    <string name="descripcion1">Descubre como vivian la familia frank y las demas personas escondidas durante la ocupacion alemana</string>
+    <string name="Titulo2">El Hermitage</string>
+    <string name="descripcion2">Arte, historia y cultura de Rusia en Ámsterdam</string>
+    <string name="titulo3">El concertgebouw</string>
+    <string name="descripcion3">Visista el Concentgebouw en Amsterdam y disfruta de la musica mas maravillosa.</string>
+    <string name="titulo4">Buscar otro lugar</string>
+    <string name="descripcion4">Buscar descripcion</string>
+    <string name="imagen1">Imagen1</string>
+    <string name="imagen2">Imagen2</string>
+    <string name="imagen3">Imagen3</string>
+    <string name="imagen4">Imagen4</string>
 </resources>
